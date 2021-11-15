@@ -23,7 +23,7 @@ all:	 $(SRC) $(LIBFT) $(MLX)
 	gcc $(CFLAGS) $(SRC) $(LIBFT) $(MLX) $(MLXFLAGS) $(INC) -o $(NAME)
 
 $(LIBFT):
-	make -C libs/libft
+	make -C ./libs/libft
 
 clean:
 	$(RM) $(OBJ)
