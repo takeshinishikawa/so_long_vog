@@ -25,9 +25,13 @@ all:	 $(SRC) $(LIBFT) $(MLX)
 $(LIBFT):
 	make -C ./libs/libft
 
+$(MLX):
+	make -C ./libs/mlx
+
 clean:
 	$(RM) $(OBJ)
 	make fclean -C libs/libft
+	make clean -C libs/mlx
 
 fclean: clean
 		$(RM) $(NAME)
