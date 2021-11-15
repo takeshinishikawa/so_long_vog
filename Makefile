@@ -35,4 +35,4 @@ fclean: clean
 re: 	fclean all
 
 run:
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -v ./$(NAME) map/map.ber
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -v ./$(NAME) map/minimalmap.ber
